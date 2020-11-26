@@ -6,3 +6,35 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+/* universal selector * */
+* {
+    margin: 0;
+    padding: 0;
+    /* changes box-sizing so borders are no longer added to total width and height */
+    box-sizing: border-box;
+}
+
+/* Body element selector, using the power of inheritance with body inheriting from * */
+body {
+    /* things related to font always in body  */
+    font-family: "Leto", sans-serif;
+    font-weight: 480;
+    font-size: 16px;
+    line-height: 1.7; 
+    color: #777;
+}
+
+.header {
+    /* vh is saying at everypoint the hiehgt of the bo should be 
+    95 percent of the height as the view point  */
+    height: 95vh;
+    /* adding a background image from our img folder */
+    background-image: linear-gradient(to right, #7ed56f, #28b485), url(../img/hero.jpg);
+    /* Whatever the the view of the view port, it is covering */
+    background-size: cover;
+    /* background-position: top; */
+    background-position: center;
+
+}
+
+
